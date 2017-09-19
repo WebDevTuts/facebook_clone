@@ -1,3 +1,53 @@
+html {
+  font-family: sans-serif;
+}
+
 header {
   background: #3B5998;
+}
+
+header .logo-area {
+  color: white;
+  display: inline-block;
+}
+
+header .logo-area a {
+  color: white;
+  text-decoration: none;
+}
+
+header .menu {
+  display: inline-block;
+}
+
+header .menu ul li {
+  display: inline-block;
+}
+
+header .icon-links {
+  display: inline-block;
+}
+
+header .icon-links ul li {
+  display: inline-block;
+}
+
+header .quick-options {
+  display: inline-block;
+}
+
+header .icon-links .privacy {
+  display: inline-block;
+}
+
+header .quick-options {
+  display: inline-block;
+}
+
+header .search-area {
+  display: inline-block;
+}
+
+header .search-area ul li {
+  display: inline-block;
 }
