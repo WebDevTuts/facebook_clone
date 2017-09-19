@@ -10,6 +10,15 @@ a {
   text-decoration: none;
 }
 
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 header {
   background: #3B5998;
   padding: 15px;
@@ -144,13 +153,62 @@ header .search-area ul li {
 
 
 #content-area {
+  background: #FAFAFA;
+  overflow: auto;
+  padding: 50px 0;
+}
 
+#content-area .widget-box {
+  background: #FFF;
+  padding: 15px;
+  margin: 0 0 15px 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px -1px rgba(138, 138, 138, 1);
+}
+
+#content-area .widget-box .head .widget-icon-container {
+  display: inline-block;
+}
+
+#content-area .widget-box .head .widget-icon {
+  background: #BFBFBF;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-area .widget-box .head .widget-icon {
+  max-width: 100%;
+  font-size: 22px;
+}
+
+#content-area .widget-box .head .widget-title {
+  display: inline-block;
+  padding: 0 0 0 15px;
+}
+
+#content-area .widget-box .body {
+  padding: 20px 0;
+}
+
+#content-area .widget-box .body .photo {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  height: 110px;
+  background: url('https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 #content-area .side-column {
   float: left;
   width: 35%;
   margin: 0 2.5%;
+  max-width: 380px;
 }
 
 #content-area .main-area {
