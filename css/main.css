@@ -8,6 +8,12 @@ html {
 
 a {
   text-decoration: none;
+  color: #2196F3;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  color: red;
 }
 
 .clearfix:before, .clearfix:after {
@@ -92,7 +98,7 @@ header .icon-links .privacy {
 header .search-area {
   display: inline-block;
   width: 40%;
-  margin-left: -4px;
+  margin-left: -8px;
   text-align: right;
 }
 
@@ -256,4 +262,33 @@ header .search-area ul li {
   margin: 15px 0 0 0;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+#content-area .main-area .widget-box .head .user-img {
+  display: block;
+  float: left;
+  background: url('https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg') no-repeat 0 0;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin: 0 15px 0 0;
+  border-radius: 50%
+}
+
+#content-area .main-area .widget-box .head .post-info {
+  display: block;
+  float: left;
+  width: 80%;
+}
+
+#content-area .main-area .widget-box .head .post-info .user-info {
+  display: block;
+  font-size: 14px;
+  margin: 4px 0 6px 0;
+}
+
+#content-area .main-area .widget-box .head .post-info .post-date {
+  display: block;
+  font-size: 12px;
+  color: #ABABAB;
 }
